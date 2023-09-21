@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        #cache-display{
+            display: flex;
+        }
+
+        #mainmem-display{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #mainmem-display > div {
+            margin: .5rem;
+            padding: .2rem;
+            font-family: monospace;
+            border: 1px solid black;
+        }
+
+        #mainmem-display > small{
+            transform: translateY(80%);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Cache</h2>
+        <div id="cache-display">
+
+        </div>
+    </div>
+    <div>
+        <h2>Main Mem</h2>
+        <div id="mainmem-display">
+            <div>
+                <small>position</small>
+                <p>content</p>
+            </div>
+        </div>
+    </div>
+    <script src="input.js"></script>
+    <script src="CacheData.js"></script>
+    <script src="CacheSimulator.js"></script>
+    <script src="Index.js"></script>
+</body>
+</html>
